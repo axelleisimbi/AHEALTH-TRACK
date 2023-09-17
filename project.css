@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+}
+
+.left-section {
+  flex: 1;
+  padding: 50px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.background-image {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+}
+
+.right-section {
+  flex: 1;
+  padding: 50px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label, input {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}

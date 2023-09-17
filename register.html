@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .icon-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .icon {
+            display: inline-block;
+            font-size: 36px;
+            margin: 0 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <p>Hover over the icons below to access forms:</p>
+
+        <!-- Form 1: Health Information -->
+        <div class="icon-container">
+            <span class="icon" onclick="showForm('REGISTER-form')">🏥</span>
+            <span class="icon" onclick="showForm('document-form')">📄</span>
+        </div>
+
+        <!-- Health Information Form -->
+        <div class="form-container" id="REGISTER-form">
+            <h2>REGISTRATION Form</h2>
+            <form>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name"><br>
+
+                <label for="middle-name">Middle Name:</label>
+                <input type="text" id="middle-name" name="middle-name"><br>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name"><br>
+
+                <label for="date-of-birth">Date of Birth:</label>
+                <input type="date" id="date-of-birth" name="date-of-birth"><br>
+
+                <label for="height">Height:</label>
+                <input type="text" id="height" name="height"><br>
+
+                <label for="blood-group">Blood Group:</label>
+                <input type="text" id="blood-group" name="blood-group"><br>
+
+                <label for="relationship">Relationship:</label>
+                <input type="text" id="relationship" name="relationship"><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- Document Information Form -->
+        <div class="form-container" id="document-form">
+            <h2>Document Information Form</h2>
+            <form>
+                <!-- Add document-related fields here -->
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showForm(formId) {
+            // Hide all form containers
+            var forms = document.querySelectorAll('.form-container');
+            forms.forEach(function(form) {
+                form.style.display = 'none';
+            });
+
+            // Show the selected form container
+            document.getElementById(formId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

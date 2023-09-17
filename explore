@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="icon" href="icon.jpg"type="image/x-icon">  
+    <title>EXPLORE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .paragraphs-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .paragraph {
+            flex: 1;
+            padding: 10px;
+        }
+        .paragraph img {
+            max-width: 100%;
+            display: block;
+        }
+        .image-left {
+            order: -1;
+        }
+        @media (max-width: 768px) {
+            .paragraphs-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Webpage Heading</h1>
+        <div class="paragraphs-container">
+            <div class="paragraph">
+                <p>Living a healthy lifestyle is essential for maintaining overall well-being and achieving a higher quality of life. 
+				Embracing healthy habits encompasses various aspects of daily life, such as regular physical activity, a balanced and nutritious diet,
+				sufficient rest, and effective stress management. 
+				Engaging in regular exercise not only enhances physical fitness but also boosts mood and mental clarity. 
+				Choosing wholesome, nutrient-rich foods fuels the body with vital vitamins and minerals, contributing to improved immunity and disease 
+				prevention. Equally important is getting an adequate amount of sleep, as it allows the body to recharge and rejuvenate. 
+				Managing stress through relaxation techniques or hobbies fosters mental resilience and reduces the risk of stress-related health issues.
+				Embracing a healthy lifestyle is a powerful investment in our long-term health and happiness,
+				promoting vitality and enabling us to make the most out of each day.
+				Living a healthy lifestyle is essential for maintaining overall well-being and achieving a higher quality of life. 
+				Embracing healthy habits encompasses various aspects of daily life, such as regular physical activity, a balanced and nutritious diet, 
+				sufficient rest, and effective stress management. Engaging in regular exercise not only enhances physical fitness but also boosts mood
+				and mental clarity. Choosing wholesome, nutrient-rich foods fuels the body with vital vitamins and minerals, 
+				contributing to improved immunity and disease prevention. Equally important is getting an adequate amount of sleep,
+				as it allows the body to recharge and rejuvenate. Managing stress through relaxation techniques or hobbies fosters mental resilience 
+				and reduces the risk of stress-related health issues. Embracing a healthy lifestyle is a powerful investment in our long-term health and 
+				happiness, promoting vitality and enabling us to make the most out of each day.</p>
+            </div>
+            <div class="paragraph image-left">
+                <img src="path/to/your/image1.jpg" alt="Image 1">
+            </div>
+            <div class="paragraph image-right">
+                <img src="path/to/your/image2.jpg" alt="Image 2">
+            </div>
+            <div class="paragraph">
+                <p>Nullam in varius felis. Integer ultrices tincidunt mi ac tristique. Duis auctor, ex
+                vel sodales euismod, neque turpis auctor magna, nec vestibulum ex dui et elit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

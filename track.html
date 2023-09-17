@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+		.navbar {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    margin: 0 60px;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #264E49;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #fff; 
+  }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-container {
+            text-align: center;
+        }
+
+        article {
+            margin: 20px 0;
+        }
+
+        .line-chart {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>STATS</h1>
+    </header>
+	<div class="navbar">
+ 
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">PROFILE</a></li>
+      <li><a href="ufiles.html">STATS</a></li>
+      <li><a href="updates.html">MANAGE ACCOUNTS</a></li>
+	      <li><a href="analytics.html">APPROAVALS</a></li>
+	  <li><a href="#">WORKSHOP</a></li>
+	  <li><a href="#">A'REPORTS</a></li>
+	<li><a href="settings.html">SETTINGS</a></li>
+	</ul>
+  </div>
+    <div class="container">
+        <div class="chart-container">
+            <canvas class="line-chart" id="lineChart" width="400" height="200"></canvas>
+        </div>
+        <article>
+            <h2>Latest Articles</h2>
+            <p>
+                
+
+In today's fast-paced world, managing our family's health often feels like juggling too many balls at once. From medical records scattered across clinics to tracking symptoms and understanding potential health risks, the task can be overwhelming. This is where Health Track, a revolutionary website, comes into play. Designed with the primary aim of empowering families in managing their health, it's crucial to explore the diverse users who benefit from this innovative platform.
+
+The Caring Parents:
+Parents are the primary users of Health Track, driven by the desire to provide the best possible care for their family. They use the platform to keep detailed health records for each family member, from vaccinations and allergies to chronic conditions and regular check-ups. For them, Health Track serves as a digital guardian, ensuring all health-related information is organized and accessible whenever it's needed.
+<br>
+The Health-Conscious Individuals:
+Within every family, there are those who prioritize their health and well-being. These individuals utilize Health Track's symptom tracking features to monitor their health proactively. They log everything from minor colds to recurring headaches, creating a data-driven approach to managing their own wellness.
+<br>
+The Expectant Couples:
+Pregnancy is a time of excitement and concern. Expectant couples use Health Track to monitor the health of both the mother and the developing child. With the predictive algorithms, they can anticipate potential complications and seek early medical advice.
+The Multigenerational Families:
+In an era of extended families living together or scattered across the globe, Health Track bridges the gap. Multigenerational families use the platform to share health records and keep everyone informed about the well-being of their loved ones. It's a digital lifeline connecting family members, regardless of distance.
+
+
+            </p>
+        </article>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // JavaScript code to create a line chart using Chart.js
+        var ctx = document.getElementById('lineChart').getContext('2d');
+        var lineChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{
+                    label: 'Website Traffic',
+                    data: [100, 120, 150, 130, 160],
+                    borderColor: '#007bff',
+                    backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                    borderWidth: 2,
+                    pointRadius: 5,
+                    pointHoverRadius: 8,
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
